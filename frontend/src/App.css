@@ -1,0 +1,36 @@
+/* Dashboard layout - Responsive with Flexbox/Grid */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.dashboard__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0 1rem 2rem;
+}
+
+/* Tablet and up: form and list side by side or stacked nicely */
+@media (min-width: 768px) {
+  .dashboard__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard__content {
+    grid-template-columns: 380px 1fr;
+  }
+}

@@ -1,0 +1,79 @@
+/* Add Transaction Form - Card layout, responsive */
+.add-form {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.add-form:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.add-form__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.add-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-form__row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.add-form__row label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.add-form__row input,
+.add-form__row select {
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.add-form__row input:focus,
+.add-form__row select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.add-form__error {
+  color: var(--expense);
+  font-size: 0.9rem;
+}
+
+.add-form__submit {
+  padding: 0.75rem 1rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.add-form__submit:hover:not(:disabled) {
+  background: #2563eb;
+  transform: scale(1.02);
+}
+
+.add-form__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
