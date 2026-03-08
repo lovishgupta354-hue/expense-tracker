@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Expense Tracker - Full Stack Web Application
 
 A beginner-friendly expense tracker with a React frontend and Node.js/Express backend, using PostgreSQL for storage.
@@ -118,3 +119,7 @@ Frontend runs at **http://localhost:3000** and proxies `/api` requests to the ba
 ---
 
 Built with React (functional components, `useState`, `useEffect`), axios, Express, and PostgreSQL.
+=======
+# expense-tracker
+Full stack Expense Tracker built with React, Node.js and PostgreSQL
+>>>>>>> 514edc1c51fc39b6ef9ebd37b3365cd16de09673
