@@ -4,7 +4,7 @@
  */
 import axios from 'axios';
 
-const API_BASE = 'https://expense-backend-dkwv.onrender.com/api'
+const API_BASE = import.meta.env.VITA_API_URL
 
 export const transactionApi = {
   // GET all transactions
