@@ -4,7 +4,7 @@
  */
 import axios from 'axios';
 
-const API_BASE = '/api';
+const API_BASE = 'https://expense-backend-dkwv.onrender.com/api'
 
 export const transactionApi = {
   // GET all transactions
