@@ -2,6 +2,10 @@
  * App - Main dashboard layout
  * Fetches transactions, computes totals, and passes data to components
  */
+const password = prompt("Enter password to access the dashboard:");
+if (password !== "123456") {
+  document.body.innerHTML = "<h1>Access Denied</h1>";
+}
 import MonthlyChart from "./components/MonthlyChart";
 import ExpenseChart from "./components/ExpenseChart";
 import React, { useState, useEffect, useCallback } from 'react';
