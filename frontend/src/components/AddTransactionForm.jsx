@@ -41,11 +41,11 @@ function AddTransactionForm({ onTransactionAdded }) {
     }
     setLoading(true);
     try {
+      const finalCategory = category === "Other" ? customCategory.trim() : category;
       await onTransactionAdded({
         title: title.trim(),
         amount: num,
-        category: category === "other"?
-        customCategory: category,
+        category: finalCategory,
         type,
         date: date || new Date().toISOString().split('T')[0],
       });
@@ -103,11 +103,12 @@ function AddTransactionForm({ onTransactionAdded }) {
           {category === "Other" && (
   <input
     type="text"
-    placeholder="Enter custom category (e.g. Grow, Binance)"
+    placeholder="Enter category"
     value={customCategory}
     onChange={(e) => setCustomCategory(e.target.value)}
   />
 )}
+          
         </div>
         <div className="add-form__row">
           <label htmlFor="type">Type</label>
